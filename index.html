@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sudoku Solver</h1>
+        <div class="grid">
+            <!-- 9x9 Sudoku Grid -->
+            <form id="sudoku-form">
+                <!-- Generating the 9x9 grid -->
+                <div class="sudoku-grid">
+                    <!-- Create 81 input boxes (9x9) -->
+                    <!-- row 1 -->
+                    <input type=" text"  class="cell" id="cell-1">
+                    <input type=" text"  class="cell" id="cell-2">
+                    <input type=" text"   class="cell" id="cell-3">
+                    <input type=" text"   class="cell" id="cell-4">
+                    <input type=" text"   class="cell" id="cell-5">
+                    <input type=" text"   class="cell" id="cell-6">
+                    <input type=" text"   class="cell" id="cell-7">
+                    <input type=" text"   class="cell" id="cell-8">
+                    <input type=" text"   class="cell" id="cell-9">
+
+                    <input type=" text"   class="cell" id="cell-10">
+                    <input type=" text"   class="cell" id="cell-11">
+                    <input type=" text"   class="cell" id="cell-12">
+                    <input type=" text"   class="cell" id="cell-13">
+                    <input type=" text"   class="cell" id="cell-14">
+                    <input type=" text"   class="cell" id="cell-15">
+                    <input type=" text"   class="cell" id="cell-16">
+                    <input type=" text"   class="cell" id="cell-17">
+                    <input type=" text"   class="cell" id="cell-18">
+
+                    <input type=" text"   class="cell" id="cell-19">
+                    <input type=" text"   class="cell" id="cell-20">
+                    <input type=" text"   class="cell" id="cell-21">
+                    <input type=" text"   class="cell" id="cell-22">
+                    <input type=" text"   class="cell" id="cell-23">
+                    <input type=" text"   class="cell" id="cell-24">
+                    <input type=" text"   class="cell" id="cell-25">
+                    <input type=" text"   class="cell" id="cell-26">
+                    <input type=" text"   class="cell" id="cell-27">
+
+                    <input type=" text"   class="cell" id="cell-28">
+                    <input type=" text"   class="cell" id="cell-29">
+                    <input type=" text"   class="cell" id="cell-30">
+                    <input type=" text"   class="cell" id="cell-31">
+                    <input type=" text"   class="cell" id="cell-32">
+                    <input type=" text"   class="cell" id="cell-33">
+                    <input type=" text"   class="cell" id="cell-34">
+                    <input type=" text"   class="cell" id="cell-35">
+                    <input type=" text"   class="cell" id="cell-36">
+
+                    <input type=" text"   class="cell" id="cell-37">
+                    <input type=" text"   class="cell" id="cell-38">
+                    <input type=" text"   class="cell" id="cell-39">
+                    <input type=" text"   class="cell" id="cell-40">
+                    <input type=" text"   class="cell" id="cell-41">
+                    <input type=" text"   class="cell" id="cell-42">
+                    <input type=" text"   class="cell" id="cell-43">
+                    <input type=" text"   class="cell" id="cell-44">
+                    <input type=" text"   class="cell" id="cell-45">
+
+                    <input type=" text"   class="cell" id="cell-46">
+                    <input type=" text"   class="cell" id="cell-47">
+                    <input type=" text"   class="cell" id="cell-48">
+                    <input type=" text"   class="cell" id="cell-49">
+                    <input type=" text"   class="cell" id="cell-50">
+                    <input type=" text"   class="cell" id="cell-51">
+                    <input type=" text"   class="cell" id="cell-52">
+                    <input type=" text"   class="cell" id="cell-53">
+                    <input type=" text"   class="cell" id="cell-54">
+
+                    <input type=" text"   class="cell" id="cell-55">
+                    <input type=" text"   class="cell" id="cell-56">
+                    <input type=" text"   class="cell" id="cell-57">
+                    <input type=" text"   class="cell" id="cell-58">
+                    <input type=" text"   class="cell" id="cell-59">
+                    <input type=" text"   class="cell" id="cell-60">
+                    <input type=" text"   class="cell" id="cell-61">
+                    <input type=" text"   class="cell" id="cell-62">
+                    <input type=" text"   class="cell" id="cell-63">
+
+                    <input type=" text"   class="cell" id="cell-64">
+                    <input type=" text"   class="cell" id="cell-65">
+                    <input type=" text"   class="cell" id="cell-66">
+                    <input type=" text"   class="cell" id="cell-67">
+                    <input type=" text"   class="cell" id="cell-68">
+                    <input type=" text"   class="cell" id="cell-69">
+                    <input type=" text"   class="cell" id="cell-70">
+                    <input type=" text"   class="cell" id="cell-71">
+                    <input type=" text"   class="cell" id="cell-72">
+
+                    <input type=" text"   class="cell" id="cell-73">
+                    <input type=" text"   class="cell" id="cell-74">
+                    <input type=" text"   class="cell" id="cell-75">
+                    <input type=" text"   class="cell" id="cell-76">
+                    <input type=" text"   class="cell" id="cell-77">
+                    <input type=" text"   class="cell" id="cell-78">
+                    <input type=" text"   class="cell" id="cell-79">
+                    <input type=" text"   class="cell" id="cell-80">
+                    <input type=" text"   class="cell" id="cell-81">
+                   
+                    
+                    <!-- Similarly, create inputs for rows 2 to 9 -->
+                    <!-- You can repeat this block of code for each row -->
+                </div>
+                <button type="button" id="solve-btn">Solve Sudoku</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
